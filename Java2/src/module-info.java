@@ -5,5 +5,5 @@
  * @author MRNB
  *
  */
-module java2 {
+module Practise1 {
 }
