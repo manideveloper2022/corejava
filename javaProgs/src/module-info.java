@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author MRNB
- *
- */
-module JavaProgs {
-}
