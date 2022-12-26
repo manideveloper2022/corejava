@@ -5,5 +5,5 @@
  * @author MRNB
  *
  */
-module Practise1 {
+module oppsexm {
 }
