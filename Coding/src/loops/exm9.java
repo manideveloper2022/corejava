@@ -2,7 +2,7 @@ package loops;
 
 import java.util.Scanner;
 
-/**
+/*
  * @author MRNB
  * 
  

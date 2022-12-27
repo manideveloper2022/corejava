@@ -1,0 +1,175 @@
+OOPS:
+-------
+Object Oriented Programming
+
+
+->Programming style that defines the common rules , regulations,standards , guidelines for writing better programming
+
+-> ex: java, .net , python , php , groovy ,go , php , javascript , angular js
+
+Adv:
+--------
+Modularity
+Easy to read and write, understand.
+Avoids complexity
+code Maintainance and code simplicity , reduce code
+future enhancements. 
+ 
+Topics:
+-> class, object , enapsulation , abstraction , inheritance, polymorphism.
+
+
+
+ 
+# Class
+--------------------------
+Can a developer create his own data type?
+Yes, Using class
+
+
+
+
+ -> Userdefined datatype
+-> Class is used to represent the real time entities/structure/model.
+ex: Company, Branch , Dep, sub-dept, Project , Employee ,Address
+-> Class doesn't contain any data.
+-> class is created before run-time
+->class is a logical representation
+->class is a template
+-> class is a blue print for obj
+
+-> Class is  block for instance variables + methods
+    a)instance variables to hold data for entity   -> state
+    b)instance methods logic would operate on instance variables  -> behaviour
+
+
+
+
+
+
+
+syntax for a class:
+A person is a entity
+A Person has id,name and age as properties.
+
+
+Person : class
+
+id,name, age : instance variables
+
+show() : instance method
+
+
+EX:
+class Person{
+
+  int id;
+	String name;
+	int age;
+
+// here id,name , age are instance variables.
+
+ public void  show(){
+	 System.out.println("hello inside show");
+ } 
+//show() is a instance method.
+
+}  
+
+
+
+
+
+
+
+
+Object:
+---------
+->instance for the class
+->variable for the class.
+create a variable for a class  ===> object
+->object is created during run time .
+->when obj is created memory is allocated for all instance variables.
+->object has logical + physical representation
+Obj is created in heap memory
+
+
+
+
+#Syntax for obj creation
+
+int x = 90;
+int ->datatye
+x -> variable
+90 -> value
+
+Person p1 = new Person();
+Person -> is a data type
+p1 -> reference variable or object
+p1 internally has id,name,age
+
+
+Person p2 = new Person();
+p2 internally contains  id,name,age
+
+
+//here p1 and p2 are  objects.
+
+
+p1 has seperate memory has id,name,age.
+p2 has seperate memory has id,name,age.
+
+
+#Class will decide property names for all objs
+#Obj will decide property values..
+
+
+
+
+
+
+
+syntax for setting data for a object:
+--------------------------------------------
+p1.id = 9000;
+p1.name ="kumar";
+p1.age=90;
+
+
+
+syntax for printing data for a object:
+--------------------------------------------
+System.out.println(p1.id);
+System.out.println(p1.name);
+System.out.println(p1.age);
+
+
+
+
+
+#call the method
+p1.show();
+
+
+using the object we need to access instance variables and methods;
+
+USE "." ON A OBJECT FOR ACCESING THE instance variables and methods.
+
+
+
+diff between normal variable and obj?
+----------------------------------------------
+
+int x = 90
+
+Person p1= Person()
+
+# x can hold only one value
+# p1 can hold multiple varibles.  in this case p1 internally have  3 values
+
+
+
+
+
+
+
