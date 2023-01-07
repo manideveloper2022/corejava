@@ -1,0 +1,47 @@
+ method/function:
+     group of statements/code block Written under a common name
+
+ 
+ 
+   write methods inside the class
+  write code one time and reuse any number of times
+  
+    
+-> how to call the method
+  -> how to write method
+
+
+
+  Adv:
+  code reusability.
+  write code once and reuse any no of times.
+  
+   
+   
+   
+     
+syntax for a method:
+------------------------
+<scope> <return type> <methodname> (<input args>){
+  
+  <method body>
+  
+  
+  <return statement>
+}
+
+
+
+scope -->public/private/protected
+returnType -> void(no return ) or int/float/long/.....etc
+<methodname> -> any name
+<input args> are optional
+<return statement> -> is mandatory if returnType is not void
+
+
+
+ 
+-> how to call the method
+-----------------------------------
+1. Create the object
+2.call the method using the Object
