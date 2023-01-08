@@ -108,6 +108,44 @@ public class operations {
 			return z;
 		}
 	}
-	
+	public void table(int input) {
+		for( int i=1; i<=10  ; i= i+1) {
+			int res = input * i;
+			System.out.println(  input + " * " + i +" = " +res);
+			  
+		}
+	}
+
+	 public int fact(int x) {
+		 
+		 int fact = 1;
+		 for(int i=1; i<=x; i++) {
+			 fact = i * fact;
+		 }
+		 return fact;
+	 }
+	 
+	 public  void number(int x) {
+		 
+		 int number = 1;
+		    for(int i = 1; i <= x; i++) {
+
+		      for(int j = 1; j <= i; j++) {
+		        System.out.print(number + " ");
+		        number++;
+		      }
+
+		      System.out.println(); 
+		    }
+	 }
+public  void numbers(int y) {
+		 
+	for (int i = 1; i <= y; i++) {
+		for (int j = 1; j <= i; j++) {
+			System.out.print (" " + j);
+		}
+		System.out.println();
+	}
+	 }
 	
 }

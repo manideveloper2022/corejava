@@ -33,15 +33,15 @@ syntax for a method:
 
 
 scope -->public/private/protected
-returnType -> void(no return ) or int/float/long/.....etc
+returnType -> (if single value needed to Return)use ---- void(no return )  or int/float/long/.....etc 
 <methodname> -> any name
 <input args> are optional
-<return statement> -> is mandatory if returnType is not void
+<return statement> -> is mandatory if returnType is not void or (if multiple value needed to Return)use "Void".
 
 
 
  
--> how to call the method
+-> how to call the method 
 -----------------------------------
 1. Create the object
 2.call the method using the Object

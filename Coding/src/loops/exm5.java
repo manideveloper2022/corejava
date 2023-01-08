@@ -27,10 +27,10 @@ public class exm5 {
 			}
 		}
 		
-		//approch2
+		/*approch2
 		for( int i= 2; i<=input  ; i= i+2) {
 			System.out.println(i);
-		}
+		}*/
 		
 
 	}

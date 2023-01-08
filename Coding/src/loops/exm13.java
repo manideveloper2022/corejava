@@ -2,6 +2,8 @@ package loops;
 
 import java.util.Scanner;
 
+//end the compilation when sum of numbers reach to 100
+
 public class exm13 {
 
 	public static void main(String[] args) {

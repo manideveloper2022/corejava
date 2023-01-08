@@ -1,12 +1,10 @@
 package loops;
 
 
-/*
- * @author MRNB
- * 
+/* .
  
- 2.
 i/p:5
+
 O/p:
 1
 2 3
@@ -14,7 +12,6 @@ O/p:
 7 8 9 10
 11 12 13 14 15
 
- *
  */
 
 import java.util.Scanner;
