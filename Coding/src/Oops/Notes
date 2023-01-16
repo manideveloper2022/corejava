@@ -167,9 +167,3 @@ Person p1= Person()
 # x can hold only one value
 # p1 can hold multiple varibles.  in this case p1 internally have  3 values
 
-
-
-
-
-
-
