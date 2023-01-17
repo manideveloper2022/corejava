@@ -8,9 +8,9 @@ public class Product {
 	String color;
 	int size;
 	String brand;
-	int price;
-	int discount;
-	int finalprice;
+	float price;
+	float discount;
+	float finalprice;
 	
 	
 	public void input() {
@@ -18,27 +18,27 @@ public class Product {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Enter Product Name");
-		String name = sc.next();
+		 name = sc.next();
 		
 		System.out.println("Enter Product Color");
-		String color = sc.next();
+		 color = sc.next();
 		
 		System.out.println("Enter Product Size");
-		int size = sc.nextInt();
+		 size = sc.nextInt();
 		
 		System.out.println("Enter Product Brand");
-		String brand = sc.next();
+		 brand = sc.next();
 		
 		System.out.println("Enter Product Price");
-		int price = sc.nextInt();
+		 price = sc.nextFloat();
 		
 		System.out.println("Enter Product Discount");
-		int discount = sc.nextInt();
+		 discount = sc.nextFloat();
 		
 	}
 	
 	public void finalprice() {
-	    finalprice = price-(price*discount)/100;
+	    finalprice = price-(price*discount/100);
 		System.out.println("Final Price is " + finalprice);
 	}
 	 

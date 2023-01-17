@@ -1,0 +1,158 @@
+Constructor:
+-------------------
+- we need to write inside the classs.
+- When obj is created Constructor is called automatically.
+- With Constructor we can set the data during obj creation.
+-initialize the instance variables during obj creation 
+  
+
+class Person{
+  int id;
+  String name;
+  ing age;
+  
+}
+
+Req: create obj + set data
+
+
+without constr:  [requires 4 lines]
+----------------------------------------------------
+Person p = new Person(); 
+
+//set the data after obj creation
+p.id =1000;
+p.name="user1";
+p.age=45;
+
+
+set the data after object creation
+initialize the instance variables after obj creation
+
+
+
+with constr:  [requires 1 lines]
+---------------------------------------------
+Person p = new Person(1000,"user1",45);
+
+set the data along with obj creation
+initialize the instance variables during obj creation
+
+
+
+
+
+points:
+------------
+Constr name is equal to class name.
+Constr doesnt have any return type.
+we can have any number of constrs in a single class -> constr overloading..
+A constr is called only one time for one obj..
+
+Adv:
+  - creat obj + set the data in single line.
+  - set data during obj creation
+
+
+
+
+
+syntax for writing constr:
+------------------------------------
+
+
+
+
+class Person  
+ {
+
+	 int id;
+   String name;
+   int age;
+   // id, name, age are instance variables
+   
+   
+    // zero arg constructor
+	public Person() {  
+		System.out.println("zero arg constructr");
+	}
+   
+   
+   
+	// param arg constructor
+	public Person(int id, int age, String pName) {  
+		this.id = id;
+		this.age = age;
+		this.name = pName;
+	}
+	
+   
+   public void show(){ // this is method
+	}
+   
+   
+   
+}
+
+
+
+Person p = new Person(); // internally calls zero-arg constr  
+Person p1 = new Person(2000,23, "user1" ); // internally calls param-arg constr   
+Person p2 = new Person(2000,23 );  
+
+
+
+
+ //diff between constr and method:
+ --------------------------------------------------------
+ 1.constr is called one time
+ method can be called any no of times
+ 
+ 2.constr name = class name
+ method  name can be anything
+ 
+ 3.contsr doesnt have any return type(not even void)
+ method have return type(atleast void) ...
+ 
+ 4.cosntr is called during obj creation
+  method should be called after obj created.
+ 
+ 
+5.constr is automatic call
+method is explict call
+ 
+6. constr logic -> only initializing instance variables
+ method logic -> any logic
+ 
+  
+
+
+This keyword:
+
+public class Person {
+ 
+	int id;
+	String name;
+	int age;
+
+ 
+	public Person(int id, String name , int age ) { 
+		this.id = id;  
+		this.name = name;
+		this.age = age;
+	}
+
+
+}
+
+/*
+ instance variables : variables created inside class
+ local variables : variables created inside the method or constructor
+
+ * */
+//this refer to the current object under execution
+//use this keyword , when instance variables names and local variable names are same
+
+
+
+
