@@ -1,0 +1,128 @@
+Polymorphism:
+---------------------
+- exhibiting the features in diff forms.
+
+
+
+We have two types of Polymorphism:
+----------------------------------------------------------------
+a).compile time Polymorphism   or method overloading   
+b) runtime polymorphism or method overriding   (possible only in inheritence)
+
+
+
+compile time Polymorphism  or method overloading
+-------------------------------------------------
+within the same class we can have different methods having same method name 
+but different method signature.
+
+
+ex:
+
+public class Calc{
+    
+    public void show(){
+       
+    }
+     
+    public void show(int x){
+           
+    }
+    
+    public void show(float x){
+           
+    }
+    
+    
+    public void show(String x){
+           
+    }
+    
+    
+    
+ }
+ 
+ 
+ 
+   
+
+  
+  Method signature:
+  -> no of args
+  -> order of args
+  -> data type of args
+  
+  
+  
+  
+  
+  
+  No of args:
+------------
+  public int add(int a, int b) {
+		int sum = a + b;
+		return sum;
+	} 
+	
+ 	public int add(int a, int b , int c) {
+		int sum = a + b+c;
+		return sum;
+	}
+  
+  
+  
+  code for calling:
+add(10,20); -> calls add method with 2 int args 
+add(1,2,3); -> calls add method with 3 int args 
+  
+  
+  
+order of args:
+---------------
+public void add(int a, float b ) {
+		System.out.println(a + b);
+	}
+	
+	public void add(float a, int b ) {
+		System.out.println(a + b);
+	}
+  
+code for calling:
+add(  5,  6.45f )   -> calls add method with int and float as args
+add(  10.78f , 7899) ->  calls add method with   float and int as args
+
+
+
+
+datatype of args:
+  -------------
+  public long add(long a, long b ) {
+		long sum = a + b;
+		return sum;
+	}
+ 	
+	public float add(float a, float b ) {
+		float sum = a + b;
+		return sum;
+	}
+
+code for calling:
+add(1313131L ,131313131L)-> calls add method with two long as args
+add(14214124.5454f , 235353.343f)-> calls add method with two float as args
+  
+
+
+
+return-type is never considered  as method signature
+ public long add(long a, long b ) {
+		long sum = a + b;
+		return sum;
+	}
+ 	
+	public int add(long a, long b ) {
+		long sum = a + b;
+		return sum;
+	}
+
+  
+  
