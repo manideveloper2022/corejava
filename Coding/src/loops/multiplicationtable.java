@@ -1,8 +1,10 @@
 package loops;
 
+//multiplication table
+
 import java.util.Scanner;
 
-public class exm6 {
+public class multiplicationtable {
 
 	public static void main(String[] args) {
 

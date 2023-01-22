@@ -10,14 +10,15 @@ import java.util.Scanner;
 Input = 5
 O/p :
 1
-22
-333
-4444
-55555
+12
+123
+1234
+12345
+4
 
  *
  */
-public class exm9 {
+public class pyramidpatten1 {
 
 	public static void main(String[] args) {
 
@@ -28,11 +29,11 @@ public class exm9 {
 
 		for (int i = 1; i <= input; i++) {
 			for (int j = 1; j <= i; j++) {
-				System.out.print (" " + i);
+				System.out.print (" " + j);
 			}
 			System.out.println();
 		}
-		System.out.println("");
+		
 
 	}
 

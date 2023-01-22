@@ -20,8 +20,6 @@ public class exm13 {
 		 
 		 }
 		 
-
-
 			System.out.println("sum = " + sum);
 
 	}

@@ -5,7 +5,7 @@ package loops;
 
 */
 
-public class exm12 {
+public class printnum2 {
 
 	public static void main(String[] args) {
 		

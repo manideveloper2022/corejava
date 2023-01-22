@@ -1,6 +1,8 @@
 package loops;
 
-public class exm1 {
+// print 1 to 100
+
+public class printnum {
 
 	public static void main(String[] args) {
 

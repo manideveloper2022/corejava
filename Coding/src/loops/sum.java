@@ -23,7 +23,7 @@ sum : 91
 
 import java.util.Scanner;
 
-public class exm7 {
+public class sum {
 
 	public static void main(String[] args) {
 		

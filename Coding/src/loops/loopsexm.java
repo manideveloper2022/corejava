@@ -1,6 +1,6 @@
 package loops;
 
-public class exm {
+public class loopsexm {
 
 	public static void main(String[] args) {
 	

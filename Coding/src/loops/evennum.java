@@ -3,12 +3,13 @@ package loops;
 
 /*
 1.take the input for a number
+
 2.find the even numbers from 1 till the input
 */
 
 import java.util.Scanner;
 
-public class exm5 {
+public class evennum {
 
 	public static void main(String[] args) {
 

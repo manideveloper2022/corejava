@@ -3,22 +3,18 @@ package loops;
 import java.util.Scanner;
 
 /*
- * @author MRNB
- * 
  
- 2.
 Input = 5
 O/p :
 1
-12
-123
-1234
-12345
-4
+22
+333
+4444
+55555
 
  *
  */
-public class exm10 {
+public class pyramidpatten {
 
 	public static void main(String[] args) {
 
@@ -29,11 +25,11 @@ public class exm10 {
 
 		for (int i = 1; i <= input; i++) {
 			for (int j = 1; j <= i; j++) {
-				System.out.print (" " + j);
+				System.out.print (" " + i);
 			}
 			System.out.println();
 		}
-		
+		System.out.println("");
 
 	}
 

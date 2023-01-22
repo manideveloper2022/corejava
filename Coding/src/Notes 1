@@ -1,0 +1,734 @@
+
+Github.com
+user name: manideveloper2022
+Password: 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
+
+
+JAVA history
+
+Developed by james Gosling at Sun Microsystems and released in 1995
+Prevoiusly it was called as OAK
+
+
+
+
+Why java?
+------------
+-Java is a simple, poratable lang
+-is a platform independent lang.
+compile in one system and run in diff system.
+ex: compile in xp/win7/ and run in any dif operating system.
+-java is secured, roboust, artificial neutral ..
+- no pointers 
+memory allocation and deallocation is taken care by java.
+garbage collector takes care of cleanup of unused data
+very strong in type checking.
+strong mechanism for exception handling
+-java has the biggeest lib support
+- java has support for multithredaing ( parallel programming)
+- support diff types of aplications:
+  a) web apps
+  b) GUI/standtardsalone apps
+  c)web services
+  d)enterprise apps ( bigdata, hadoop, cloud services, content mangmt)
+  e)tools like hybris , atg , selenium , jmeter
+  f) embedded / ML / AI / IOT /smart card apps ( support from embedded along with java)
+- java is obj oriented langugae
+   class/obj/encapsulation/abstraction/polymorphsim/inheritence
+- java supports distributed programming
+- has support for many  protocals.
+ex: http, https, ftp , smtp , soap etc....
+protocol supported code is available from java lib
+- used for developing many frameworks.
+ex: Hibernate, springs , jpa, selenium
+
+
+
+
+
+Simple - easy to learn, and its syntax is simple
+Secured - java program always runs in java runtime environment
+Object Oriented - everyting is an object which has some data and behaviour
+Robust - java is strong.Exception handling & memory management
+Portable - Carry the java bytecode to any platform
+Platform independent - java is a write once run anywhere langugae.
+Architecture Neutral - java compiler generates an architecture neutral object file format.
+Interpreted - Source code --- bytecode --- JVM(interpreter).
+
+
+
+
+
+
+Setup:
+-----
+1. download and Install  java8
+2. download and install eclipse 
+  
+https://drive.google.com/drive/folders/1qEYiff8p6216-CFwa_9yu_AF44M8NkQB
+
+3. set path for java jdk path :
+open commnad promot and type:
+a. javac  -> jdk is available
+b. java   -> jre is available
+
+copy the path "C:\Program Files\Java\jdk1.8.0_231\bin"
+and add the jdk bin location to the environment variable "path".
+
+
+How to check JDK is installed?
+try "javac" command in command window
+
+
+How to check JRE is installed?
+try "java" command in command window
+
+
+How to check java version?
+Ctrl + R --- cmd --- java -version ---- enter.
+
+
+  Java: JDK + JRE
+  JDK -> Commands + lib for compilations
+  JRE -> commands for execution
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+datatypes : [type of the data ].
+  - Every Variable is created by specifying the datatype.
+	
+		     datatype           size (in bytes)
+		 ----------------------------------------------  
+		 byte               1    ( byte is the DT that represents any Data type )
+		                          when we need to communicate with third party.
+		 						               ex: DB, FILE, WEB etc...
+		 [natural numbers]
+		 short              2      -32768 to 32767                                    
+		 int                4      number
+		 long               8      bigger number
+		 
+		 [decimal numbers]
+		 float              4      -> decimal
+		 double             8      -> bigger decimal
+		 
+		 char               2           
+		 String             depends on no of chars
+		 
+		 boolean            1 bit    -> true/false 
+		 
+
+
+
+
+variable:
+ hold the real time static/dynamic data.
+ create a variable using the data type.
+ memory allocation/processing for the data depends on TYPE of data ..
+
+
+
+
+              
+How to create a variable?
+solution)
+
+<data-type> <variable-name>;
+
+
+
+example:
+int a;
+float b;
+double c;
+String d;
+
+
+
+int x; // declaration
+x = 90; //assigning value
+
+int x =90 ; //declartaion + initializing value
+
+
+
+how to run a java program:
+-----------------------------
+
+-> write the main() method inside the class.
+if a java file has the main method then only it is eligible for running.
+To run a program main() method is mandatory.
+
+syntax of main method:
+---------------------- 
+public static void main(String[] args) {
+
+
+}
+
+
+
+
+syntax of main method:
+----------------------
+public static void main(String[] args) {
+
+
+}
+
+ public ->  scope is global so that JRE can access
+ static -> defines the method is static
+ void -> no return type
+ main -> function name or method name
+ args -> input arguments 
+
+
+
+
+
+
+
+eclipse:
+------------------------
+
+once eclipse is opened it will ask for the "workspace".
+workspace -> is the location in the system where the projects are created
+provide the workpsace path and  click on launch.
+
+
+1.create the java project
+a java project contains two components:
+JRE  -> java library
+src  -> developer has to create/write the code
+
+
+2.under the project> src>  create the package
+package -> package is the folder that contains the related java files.
+we create seperate package and maintain our files.
+
+3.Under the package create the class
+
+Steps:	
+1.create java project
+2.create package
+3.under package create the Java file..
+
+ package --> folder that contains the related java files.ex: validate, ui , request , db , txn, security ...
+
+   1.Hello.java
+
+
+
+
+
+Structure of java file:
+-----------------------------
+ Ex1.java
+  
+ 1.package name
+ 2.import statements
+ 3. class name
+   class name  == file name
+   one java file should contain only one class
+ 4.inside a class we can define 
+ instance variables + methods + constructr +
+ static variables + static methods + static block...
+
+
+
+
+ Steps to run java file in command prompt:
+1.Compilation  
+  javac Ex1.java 
+  result: Ex1.class is generated[byte code file]
+
+2.Execution 
+  java Ex1
+  result : <some output>       
+ 
+
+
+
+
+
+ how to run the prog?
+--------------------------
+1. compilation
+2.execution
+
+-> compilation:
+  javac Ex1.java
+  
+  for compilation we need .java file 
+  if compilation is success , it generates .class file 
+  
+-> execution:
+  java Ex1 
+  
+  for execution we need .class file.
+ 
+
+
+
+
+
+
+
+
+
+
+ what is a jar?
+ --------------------
+jar:    [java archive] - exposing the code 
+A jar file is nothing but a zip file but contains only .class files.
+A jar file contains multiple .class files.
+
+java library. 
+contains multiple .class files
+large no files to share with the team , then create jar file that contains .class files.
+ 
+
+
+ 
+ Req:
+ Dev1 has 500 java files.
+ Dev1 has to share with Dev2
+ 
+ dev2 has to use the 500 files but not change the code.
+ 
+ if dev1 shares 500 .java files the dev2 can use and he can modify it. --> not recommended
+ if dev1 shares 500 .class files the dev2 can use and he cannot modify it. --> recommended
+ if dev1 shares a jar file [ jar file internally contains 500 .class files] to  the dev2 can use and he cannot modify it. --> strongly recommended
+ 
+ 
+ solution:
+ 1.Dev1 will compile 500 .java files.
+  result : 500 .class are generated
+ 
+ 2.Dev1 will create the jar file using 500 .classfiles
+ 3.Dev1 will share the jar file to Dev2
+ 4.Dev2 will import the jar file in his project
+ 
+
+
+ 
+ Example programs :
+
+
+
+
+
+
+
+
+///****************************************************************************////
+
+
+
+Example program by taking input by the customer.(Scanner code)
+
+
+package YTex;
+
+import java.util.Scanner;
+
+public class Exm2 {
+
+	public static void main(String[] args) {
+		
+	
+		      int numberOne, numberTwo, numberThree;
+		      Scanner scan = new Scanner(System.in);
+		      
+		      System.out.print("Enter the First Number: ");
+		      numberOne = scan.nextInt();
+		      System.out.print("Enter the Second Number: ");
+		      numberTwo = scan.nextInt();
+		      System.out.print("Enter the Third Number: ");
+		      numberThree = scan.nextInt();
+		      
+		      if(numberOne > numberTwo && numberOne > numberThree)
+		        {
+		            System.out.println("Largest number is:"+numberOne);
+		        }
+		        else if(numberTwo > numberThree)
+		        {
+		            System.out.println("Largest number is:"+numberTwo);
+		        }
+		        else
+		        {
+		            System.out.println("Largest number is:"+numberThree);
+		        }
+		      
+		     
+		      
+	} 
+}
+ 
+
+///*********************************************************************************////
+
+
+
+
+
+
+         //incrementor , decrementor
+	    int x= 90;
+	    
+
+	    x++; //x = x+1 post increment
+	    ++x; //x = x+1 pre increment
+	    
+	    System.out.println(x++);
+	    System.out.println(++x);
+
+
+
+	    //assignment
+	    x = x+5; // or x+= 5;
+	    x = x-5; // or x-= 5;
+	    x = x*5; // or x*= 5;
+	    x = x/5; // or x/= 5;
+
+	   
+
+ 
+ 
+ -----------------------------------------------------------------
+ 
+ 
+ 
+
+
+/**
+ - execute the code only if the condition is satisfied.
+ - conditional statements in java:
+		 1. if
+		 2. if and else
+		 3. if and else if
+		 4. switch
+		 5. ternary
+
+
+int/float/double/long:
+		------------------------
+		==
+		!=
+		>
+		<
+		>=
+		<=
+    
+    
+		String:
+		-------------
+		==
+		!=
+		equals()
+    
+    
+	
+	 when should we prefer if and else if:
+ -----------------------------------------
+ 1. when there is a dependency between two conditions
+ 2. at a time only one condition is satisfied
+ 3. simplified version for nested if statements
+ 
+ 
+ 
+ 
+ 
+  
+  
+/**
+  Loops/Iteration:
+  ------------------
+  - execute same code multiple times but every time on different data until the 
+    condition is satisfied.
+  
+  In Java we have 3 types of loops :
+  ->for 
+  ->while 
+  ->do while
+  
+
+
+*/
+
+
+
+
+for loop requires below 3 sections:
+->initialization          
+->condition              
+->increment/decrement 
+
+	for( int i= 1; i <=10 ; i= i+1) {
+  
+  }
+  
+  //initialization  :: int i= 1; 
+  
+  //condition :: i <=10 ; 
+  
+ // increment/decrement  :: i= i+1
+
+
+
+
+
+
+/**
+While loop:
+-use while loop when we dont know the number of  itereations/runs/size.
+-every for loop can be converted to while loop
+- for while loop only condition is mandatory ; others are optional
+
+for loop:
+use for loop if  we know the no of itereations/runs/size.
+
+*/
+
+
+
+
+
+
+
+
+OOPS:
+-------
+Object Oriented Programming
+
+
+->Programming style that defines the common rules , regulations,standards , guidelines for writing better programming
+
+-> ex: java, .net , python , php , groovy ,go , php , javascript , angular js
+
+Adv:
+--------
+Modularity
+Easy to read and write, understand.
+Avoids complexity
+code Maintainance and code simplicity , reduce code
+future enhancements. 
+ 
+Topics:
+-> class, object , enapsulation , abstraction , inheritance, polymorphism.
+
+
+
+ 
+# Class
+--------------------------
+Can a developer create his own data type?
+Yes, Using class
+
+
+
+
+ -> Userdefined datatype
+-> Class is used to represent the real time entities/structure/model.
+ex: Company, Branch , Dep, sub-dept, Project , Employee ,Address
+-> Class doesn't contain any data.
+-> class is created before run-time
+->class is a logical representation
+->class is a template
+-> class is a blue print for obj
+
+-> Class is  block for instance variables + methods
+    a)instance variables to hold data for entity   -> state
+    b)instance methods logic would operate on instance variables  -> behaviour
+
+
+
+
+
+
+
+syntax for a class:
+A person is a entity
+A Person has id,name and age as properties.
+
+
+Person : class
+
+id,name, age : instance variables
+
+show() : instance method
+
+
+EX:
+class Person{
+
+  int id;
+	String name;
+	int age;
+
+// here id,name , age are instance variables.
+
+ public void  show(){
+	 System.out.println("hello inside show");
+ } 
+//show() is a instance method.
+
+}  
+
+
+
+
+
+
+
+
+Object:
+---------
+->instance for the class
+->variable for the class.
+create a variable for a class  ===> object
+->object is created during run time .
+->when obj is created memory is allocated for all instance variables.
+->object has logical + physical representation
+Obj is created in heap memory
+
+
+
+
+#Syntax for obj creation
+
+int x = 90;
+int ->datatye
+x -> variable
+90 -> value
+
+Person p1 = new Person();
+Person -> is a data type
+p1 -> reference variable or object
+p1 internally has id,name,age
+
+
+Person p2 = new Person();
+p2 internally contains  id,name,age
+
+
+//here p1 and p2 are  objects.
+
+
+p1 has seperate memory has id,name,age.
+p2 has seperate memory has id,name,age.
+
+
+#Class will decide property names for all objs
+#Obj will decide property values..
+
+
+
+
+
+
+
+syntax for setting data for a object:
+--------------------------------------------
+p1.id = 9000;
+p1.name ="kumar";
+p1.age=90;
+
+
+
+syntax for printing data for a object:
+--------------------------------------------
+System.out.println(p1.id);
+System.out.println(p1.name);
+System.out.println(p1.age);
+
+
+
+
+
+#call the method
+p1.show();
+
+
+using the object we need to access instance variables and methods;
+
+USE "." ON A OBJECT FOR ACCESING THE instance variables and methods.
+
+
+
+diff between normal variable and obj?
+----------------------------------------------
+
+int x = 90
+
+Person p1= Person()
+
+# x can hold only one value
+# p1 can hold multiple varibles.  in this case p1 internally have  3 values
+
+
+
+
+
+
+
+ method/function:
+     group of statements/code block Written under a common name
+
+ 
+ 
+   write methods inside the class
+  write code one time and reuse any number of times
+  
+  
+  
+  
+    
+-> how to call the method
+  -> how to write method
+
+
+
+  Adv:
+  code reusability.
+  write code once and reuse any no of times.
+  
+   
+   
+   
+     
+syntax for a method:
+------------------------
+<scope> <return type> <methodname> (<input args>){
+  
+  <method body>
+  
+  
+  <return statement>
+}
+
+
+
+scope -->public/private/protected
+returnType -> void(no return ) or int/float/long/.....etc
+<methodname> -> any name
+<input args> are optional
+<return statement> -> is mandatory if returnType is not void
+
+
+
+ 
+-> how to call the method
+-----------------------------------
+1. Create the object
+2.call the method using the Object

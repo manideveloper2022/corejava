@@ -7,10 +7,9 @@ public class exm14 {
 	public static void main(String[] args) {
 
 
-		 
 			Scanner sc = new Scanner(System.in);
-			 int sum =0;
-		  int num = 0;
+			int num = 0;
+			int sum= 0;
 		  
 		  while(num >= 0){
 		    System.out.println("Enter number: ");

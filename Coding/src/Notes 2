@@ -1,0 +1,610 @@
+JAVA history
+
+Developed by james Gosling at Sun Microsystems and released in 1995
+Prevoiusly it was called as OAK
+
+
+
+
+Why java?
+------------
+-Java is a simple, poratable lang
+-is a platform independent lang.
+compile in one system and run in diff system.
+ex: compile in xp/win7/ and run in any dif operating system.
+-java is secured, roboust, artificial neutral ..
+- no pointers 
+memory allocation and deallocation is taken care by java.
+garbage collector takes care of cleanup of unused data
+very strong in type checking.
+strong mechanism for exception handling
+-java has the biggeest lib support
+- java has support for multithredaing ( parallel programming)
+- support diff types of aplications:
+  a) web apps
+  b) GUI/standtardsalone apps
+  c)web services
+  d)enterprise apps ( bigdata, hadoop, cloud services, content mangmt)
+  e)tools like hybris , atg , selenium , jmeter
+  f) embedded / ML / AI / IOT /smart card apps ( support from embedded along with java)
+- java is obj oriented langugae
+   class/obj/encapsulation/abstraction/polymorphsim/inheritence
+- java supports distributed programming
+- has support for many  protocals.
+ex: http, https, ftp , smtp , soap etc....
+protocol supported code is available from java lib
+- used for developing many frameworks.
+ex: Hibernate, springs , jpa, selenium
+
+
+
+
+
+Simple - easy to learn, and its syntax is simple
+Secured - java program always runs in java runtime environment
+Object Oriented - everyting is an object which has some data and behaviour
+Robust - java is strong.Exception handling & memory management
+Portable - Carry the java bytecode to any platform
+Platform independent - java is a write once run anywhere langugae.
+Architecture Neutral - java compiler generates an architecture neutral object file format.
+Interpreted - Source code --- bytecode --- JVM(interpreter).
+
+
+
+
+
+
+
+Operators --  symbols (+,*,/,&&, ||)---- to perform operation on operands
+
+unary operands (single operands)
+
+binary operands (2 operands)
+
+ternary operands (3 operands)
+
+
+arithmetic operators - 
+
++,*,/,%, ++, --
+
+
+unary operators - 
+
+unary minus (-) -- it is used to covert in a negative number
+
+unary plus (+) -- it is used to covert in a positive number
+
+Increment operators (++) - it increments the value by 1
+
+Decrement operators (-) - it decrements the value by 1
+
+
+Compliment (~) -
+
+{
+Int a = 2;
+system.out.println(~a);  //complement 
+//2 -(2+1)=-3
+}
+
+
+
+Not operator (!) - In this it returns in boolean value.
+
+{
+Int a = true;
+system.out.println(!a);  //complement 
+}
+
+
+
+shift operators - 
+
+<<, >>, >>>
+
+{
+int a=10;
+		System.out.println(a<<2);//10*2^2 = 40
+		//01010 00=40
+		System.out.println(a>>2);//10/2^2 = 10/4 = 2
+		//000010=2
+		System.out.println(a>>>2);
+		//000010=2
+}
+
+
+
+
+Relational operators - 
+
+these operators are used to check the relation between two values. it returns the boolean result
+
+
+ {
+  int a=10, b=3, c=8;
+		System.out.println(a>=b);
+		System.out.println(a==c);
+		System.out.println(a!=b);
+		System.out.println(b<c);
+}
+
+
+
+
+Assignment operator (Alieas short hand operators) - value will be asigned to variable on the left.
+
+ {
+  int a=10;
+		System.out.println(a=5);
+		System.out.println(a +=1);
+		System.out.println(a *=2);
+		System.out.println(a /=2);
+		System.out.println(a %=2);
+		System.out.println(a &=2);
+}
+
+
+
+Logical operators  -  
+
+Logical And (&&)- returns if both conditions are true
+Logical OR (||)- returns true if atleast one conditions is true
+Logical NOT (!)- it is used to reverse the state of the variable
+
+
+{
+  int a=10, b=3, c=8;
+		System.out.println(a>b && a<c);
+		System.out.println(a>c || a<c);
+		System.out.println(a&c);
+		System.out.println(a|b);
+}
+
+
+
+
+Bitwise operators - 
+
+And(&)- OR(|)
+
+
+Difference between logical and bitwise operators 
+
+EX:- 
+
+    And operators diff:
+     
+	 {
+	 
+	 int a=10, b=3, c=8;
+	 
+	 System.out.println(a<b && a++ >c);//f t = f -- in this case if 1st condition is false then 2nd condition will not been compiled.
+	 System.out.println(a);//10
+	 System.out.println(a<b & a++ >b);//f t = f -- in this case if 1st condition is false then 2nd condition will been checked.
+	 System.out.println(a);//11
+	 
+	 }
+	 
+	 
+	OR operators diff:
+	
+	 {
+	 
+	 int a=10, b=3, c=8;
+	 
+	 System.out.println(a>b || a++ <c);//t f = t -- in this case if 1st condition is true then 2nd condition will not been compiled.
+	 System.out.println(a);//10
+	 System.out.println(a>b | a++ <b);//t f = t -- in this case if 1st condition is true then 2nd condition will been checked.
+	 System.out.println(a);//11
+	 
+	 }
+	 
+	 
+	 
+	 
+	 for( int i=1; i<=10  ; i= i+1) {
+			int res = input * i;
+			System.out.println(  input + " * " + i +" = " +res);
+			  
+		}
+	 
+	 
+	 
+	 
+Ternary operator - it is repleca of if-else statement or condition.
+
+
+{
+
+int a =10, b=5;
+int max=(a>b)?a:b;
+System.out.println(max);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+Control flow statements:
+
+
+Using control statement we  can control the flow of java code
+
+they are 3 types:
+
+1) condition statements
+2) loop statements
+3) Jump statements
+
+
+
+
+
+Condition statements:
+
+a) in this the syntax works with if & if-else.
+
+
+IF ex:
+
+   {
+    int x = 20;
+    int y = 18;
+    if (x > y) {
+      System.out.println("x is greater than y");
+    }
+	
+If - Else ex:
+
+    {
+    int time = 20;
+    if (time < 18) {
+      System.out.println("Good day.");
+    } else {
+      System.out.println("Good evening.");
+    }  
+    }
+	
+b) in this we can also use switch case too
+
+
+    {
+    int day = 4;
+    switch (day) {
+      case 1:
+        System.out.println("Monday");
+        break;
+      case 2:
+        System.out.println("Tuesday");
+        break;
+      case 3:
+        System.out.println("Wednesday");
+        break;
+      case 4:
+        System.out.println("Thursday");
+        break;
+      case 5:
+        System.out.println("Friday");
+        break;
+      case 6:
+        System.out.println("Saturday");
+        break;
+      case 7:
+        System.out.println("Sunday");
+        break;
+                 }
+    }
+	
+	
+	
+	
+Loop statements:
+
+execute the block of code repeatedlyy till the condition is satisfied(true)
+
+
+a)while loop:
+             we don't know the number of times it needs to compile to satisfy the condition
+		syntax:
+                 
+             while(condition){
+			 statement
+			 }			 
+			 
+		EX: 
+		    int i=0;
+            while(i<=0)
+			{
+			   System.out.println("the number is "+i);
+			   i++;
+			}
+           			
+					
+					
+b)For loop:
+           we exatly know thre number of times we want to compile and satisfy the condition
+		syntax:
+		
+		     for(initialization; condition; increments/decrements){
+			 statements			
+			 }
+			 
+			 
+		EX:
+		     int sum=0;
+			 for(int i=1;i<=5;i++){
+			    sum=i+sum;
+			 }
+			 
+			 System.out.println("the sum of first 5 natural no'/s is "+Sum);
+			 
+			 
+c)Do while loop:
+                we don't know the number of times it needs to compile to satisfy the condition and we need to compile the least once.
+				
+			Syntax:
+
+                 do
+
+				{
+				
+				//statements
+				
+				}while(condition)
+
+
+         EX:
+              int i=6;
+              do
+             {
+			 
+			 System.out.println("the number is " + i);
+			 i++;
+			 
+			 }while(i<=5);		  
+		
+		
+		
+		
+		
+		
+3)Jump statement:
+                Transfer the control of the program to specific statements.
+
+    	i)Break statement: breaks the compilation with the help of given condition
+		     Ex: 
+			    for(int i=0;i<=10;i++)
+				{
+				if(i==5)
+				{
+				break;
+				}
+				system.out.println(i);
+				}
+				
+				
+				Result:
+                       0				
+				       1
+					   2
+					   3
+					   4
+				
+				In this the condition is to break the compilation loop at certain provided number "5"
+					   
+					   
+		ii)Continue statement: While compiling it will skip only the given condition and continue with the compilation.
+		     Ex: 
+			    for(int i=0;i<=10;i++)
+				{
+				if(i==5)
+				{
+				continue;
+				}
+				system.out.println(i);
+				}
+				
+				
+				Result: 
+				       0
+				       1
+					   2
+					   3
+					   4
+					   6
+					   7
+					   8
+					   9
+					   10
+				It skiped the number "5" as the condition is to skip the compiled number "5".
+				
+				
+				
+				
+				
+				
+				
+				
+A Function : It is a block of code which only perform certain actions
+ 
+it has 2 types
+i)Pre defined
+ii)user defined
+
+
+
+
+ 
+				
+OOPs - object oriented programming is a paradigm to design a program using class and objects.
+
+provides many concepts, such as
+-> Object
+-> Class
+-> Inheritance
+-> Polymorphism
+-> Abstraction
+-> Encaapsulation
+
+
+
+Class : it is a template or blueprint from which objects are created. it is a logical entity.
+    Syntax: 
+           class<class_name>
+           {
+		   field;
+		   method;
+		   }		   
+				
+Object : it is software bundle that encapsulates variables and methods operating on those variable.
+
+		i) An entity that has state and behavior
+		
+		State: (knows - what it has): Bike - gears, breakes, wheeles etc
+		Behavior:(can do - what it can do): accelerating, applying brakes ect
+		
+       ii) 	it has both physical and logical entity(bankinf system)
+      iii)	its an instance of a class   
+				
+				
+				
+Instance Variable:
+
+i) Non static variable and are declared in a class outside any method, constructor or block
+ii) Object creation is mandatory
+iii)Scop--inside all methods, blocks, constructor
+iv)initialization is not mandatory. its default value is 0, false, null
+v)Access specifier can be uses
+vi)object is created, allocates memory to variables
+vii)instance method - accessed directly
+
+Class/Static variable:
+
+i) declared using the static keyword within a class outside any method constructor or block
+ii)object crreation is not necessary
+iii)inside all methods, blocks, constructor
+iv)initialization is not mandatory. its default value is 0, false, null
+v)Access specifier can be uses
+vi)when class file loaded, allocates memory to variable
+vii)create object then call variable.
+
+
+
+Methods: Uniqueness of parameter based on no.of parameters and order of parameters
+
+      EX: int print(int x, String y), int print (string y, int x)
+
+Why to use methods --
+
+Code reusability,readable and eeasier
+
+
+	  
+ 
+ 
+ Types:-
+ 
+ i) Instance Method(non static) -- used to implement behaviors of each instance of class
+             Syntax: void print()
+			         {
+					 //method body
+					 }
+ 
+ ii)Static Method(Class method) -- implements the behavior of the class
+             Syntax: static void print()
+			         {
+					 //method body
+					 }
+					 
+					 
+
+Parameters : Values those are given in function.
+Arguments : Values they passed to function 
+
+
+Difference between Call by Value and Call by Reference:
+
+
+Call by Value:
+i) Means that arguments value is copied and is passed to the parameter list of a method.
+ii)Changes made in a copy of variable never modify the value of variable outside the funcetion.
+
+
+Call by Reference:
+i)Instead of copying the values of variables, the address of the variables is used.
+ii)Change in the variable also affects the value of the variable outside the function.
+
+
+
+
+
+Method Overloading:
+
+Several methods in java are allowed to have same method name with different parmeters and different definitions. The concept is used when there is necessity to perform similar tasks with diffrent arguments.
+
+Different ways to overload the method:
+i) By changing number of arguments
+ii)By changing the data type
+
+
+
+Constructor: A constructor is a special type of method that is used to initialize instance variable in a case.
+             It is involed when an instance of a class is created using the new operator.
+			 Constructor can also accept arguments like methods and can be overloaded.
+			 
+			 Syntax:
+			        Acess modifiers_name class_name(Parameter_list)
+					{
+					//where we can initialize the value of instance variable, local variable, call the methods
+					}
+					
+					
+
+     Types of constructors in java:
+	    i)Default constructor (No-argument constructor)
+		Syntax:
+		       <class_name>()
+			   {
+			   .......
+			   }
+       ii) Parameterized Constructor (Arguments constructor)
+	   Syntax: 
+	          Person(String name, int age)
+			  {
+			  //constructor code.
+			  }
+			  
+			  
+			  
+This Key word: This is a reference variable that refers to the current object.
+
+
+               This ---------------------------------State/behaviour
+       (reference variable)                            (object)
+	   
+
+
+
+
+
+Usage of java this keyword:
+
+i) This can be used to refer current class instance variable.
+ii) This can be used to invoke current class method (implicity).
+iii)this() can be used to invoke current class constructor.
+iv) this can be passed as an argument in the method call.
+v)this can be passed as argument in the constructor call.
+vi)this can be used to return the cuurent class instance from the method.
+
+
+
+
+
