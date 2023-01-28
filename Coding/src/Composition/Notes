@@ -1,0 +1,88 @@
+Composition is also called as Has - A relationship
+
+Has-A relationship:
+----------------------------
+Object inside object
+Object as instance variable
+
+
+
+Req:
+Person has person info and address info
+Student has student info and address info
+
+
+
+
+without - has a relation
+---------------------------------------------------------------------
+
+- create two classes
+
+class Person:
+       id,name,age,streetNo,city,state,country,pin
+       
+class Student:
+       id,firstname,lastname,branch,semno,streetNo,city,state,country,pin
+     
+  
+
+
+
+with has-a:
+----------------------------------------------------------------------------
+- create three classes
+- Object as a instance variable.
+
+
+Address class has streetNo,city,state,country,pin
+Person class has adress object as instance variable
+Student class has adress object as instance variable
+
+
+class Address:
+    String streetNo, String city, String state, String country, String pin
+    
+    
+class Person{
+       int id;
+       String name;
+       int age;
+       Address addr;
+       
+}    
+ 
+  
+    
+class Student{
+       int id;
+       String firstname;
+       String lastname;
+       int branch;
+       int semno;
+       Address addr;
+}       
+   
+
+In future if we need to add additional properties for Address then we need to change Person and Student class.
+   
+   
+person has 3 addresses:
+--------------------------
+
+
+class Person {
+       int id;
+       String name;
+       int age;
+       Address presentAddr;
+       Address permAddr;
+       Address offAddr;
+  }
+          
+    
+    
+
+
+ 
+ 

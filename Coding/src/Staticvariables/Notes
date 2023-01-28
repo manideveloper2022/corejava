@@ -1,0 +1,111 @@
+static variables:
+  --------------
+  -> static variable is declared inside the class
+  ->global variables.
+  ->memory is created only one time
+  ->static variables are like the common data for all objs
+  
+  
+  
+   
+  ->
+  For instance variables , memory is created every time when obj is created.
+  static variables memory is created one time during class loading.
+  
+  
+  
+  
+  syntax:
+  --------------
+  class Person{
+    int id; // instance variable
+    static int count; // static variable
+    
+  }
+  
+  
+  
+  
+  
+    static variables ---> common data for all obj
+  instance variables ---> specific data for every obj.
+    
+
+  class Student{
+    #instance  variables
+    int id;
+    String name;
+    int semNo;
+    
+    static String colleageName ; //  static variable memory allocated one time
+  }
+  
+  
+  
+  ->we can call static variable as "class variables"
+ -> for accessing static variable object is not required, Class name is sufficient.
+ -> for accessing instance variable object is required.
+  
+  
+  
+    Syntax for changing static  varibles:
+  ---------------------------------------
+   Student.colleageName ="GPR  Engg college";
+  
+  
+  
+  
+     Syntax for accessing static  varibles:
+  ---------------------------------------
+  System.out.println(Student.colleageName)   ;
+  
+  
+  
+  
+  
+Instance variable                                    static variables                                     local variables
+---------------------------------------------------------------------------------------- ----------------------------------
+1. inside a class                                1.inside a class with static                            1.inside the method
+2.memory  is created during obj creation         2.memory is created during class loading                2. memory is created when method is called
+3.memory is created every time when obj          3. memory is created one time                           3.memory is created every time when method is called,
+is created
+4.memory is deleted when                         4.memory is deleted when prog stops/class is unloaded     4.memory is deleted when method execution is completed
+obj is garbage collected. 
+5.memory is created in heap                      5. memory is creaed in class area                        5. memory is created in stack
+6.access using the object                        6.access using the class name                            6. access within the method 
+7.to represent specific data                     7.to represent common data                               7. temporary variables for processing
+8.is associated with obj                         8. associated with class                                  8.associated with method
+  
+  
+  Example to understand above differences ::
+  --------------------------------------------
+  public class Person{
+
+
+	int id;  ///instance variable
+	static int count;///static variable
+	
+	
+	public void show(){
+	  int b=45; ///local variable
+	}
+
+   public static void process(){
+   
+     int a= 90;
+   }
+
+}
+  
+  
+  Garbage Collection:
+------------------------
+- It is a background job that runs for the cleanup of unused data.
+- memory de-allocation is taken care by java using GC. 
+
+Memory:
+-------------
+Heap area  ---------> Objects 
+class area  -----------> class info , static info
+Stack  ---------------> local variables
+ 

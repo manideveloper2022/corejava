@@ -1,0 +1,40 @@
+ static block:
+------------------
+-> static block is executed only 1 time , during class loading
+-> static block contains code  only for initializing the static variables.
+-> static block is executed before the constructor.
+-> write static block inside the class  
+-> static block is a automatic call
+
+
+purpose:
+----------------
+to initialize the static variable before anyone uses it
+
+
+syntax:
+--------------
+
+class Data{
+
+ //static variable
+ static int count;
+ 
+ //static block
+ static{
+   <some jaav code>
+ 
+   count = 890;
+ }
+
+
+}
+
+
+
+
+instance variables + instance method + constr   ---> 1 set
+(specific data)        ( any logic)     ( initializing the i.v. when obj is created)
+
+static variables + static methods + static block ---> 1 set
+(common data)      ( logic for s.v.)  ( initializing the s.v. during class loading)
