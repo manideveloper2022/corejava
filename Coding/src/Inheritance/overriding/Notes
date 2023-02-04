@@ -1,0 +1,81 @@
+/*
+  One parent with multiple child classes.
+  
+   RBIBank: Parent class
+     - createAccount()
+     - processLoan()
+     
+   HDFC, ICICI, SBI are the child classes OF RBIBank class.
+   
+   create obj for hdfc , sbi , icici and call the methods.
+
+#requiremnet:
+# Hdfc WANTS TO GIVE RATE OF ROI @ 12%
+
+
+
+======> method overriding [replace the parent logic]
+- Used only in inheritance
+- parent and child class will have the same methodName + same method signature 
+but with diff logic 
+
+
+   
+ * /
+ 
+ 
+ 
+ 
+
+Method overloading  example:
+-----------------------------------------------
+class caclculator{  
+	 int add(int a,int b)
+	 {return a+b;}  
+	 
+	 int add(int a,int b,int c)
+	 {return a+b+c;}  
+}
+
+
+
+
+
+Method overriding example:
+-----------------------------------------------
+public class Service{  
+	  public void process()
+	  {
+	  	System.out.println(" process cust info");
+	  }  
+}  
+
+public class AgentService extends Service 
+ {  
+	    public void process()
+	  	{
+	  		System.out.println(" process  Agent info");
+	  	}
+} 
+
+
+
+
+/*
+
+System.out.println("======HDFC2 Detailes=====");
+		h2.createAccount();
+		h2.processLoan();
+		h2.demat();
+		h2.processLoan();
+
+
+*/
+
+
+
+
+
+
+ 
+ 

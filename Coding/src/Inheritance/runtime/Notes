@@ -1,0 +1,52 @@
+
+public class RBI {
+
+	public void createAcc() {
+		System.out.println("RBI: Creating account");
+	}
+	
+	public void processLoan() {
+		System.out.println("RBI: 9% ROI");
+	}
+}
+
+
+
+
+/**
+  RBI is parent class
+  HDFC is child of RBI
+  HDFC is overriding the processLoan() method
+  
+ */
+public class Hdfc extends RBI{
+
+	//overriding method
+	public void processLoan() {
+		System.out.println("HDFC: 12%");
+	}
+	
+	public void demat() {
+		System.out.println("HDFC: demat 13%");
+	}
+}
+
+
+Two ways of obj creatin for HDFC:
+
+1.Hdfc h = new Hdfc();
+
+
+2.create obj for child class and refer by parent class
+  RBI r = new Hdfc(); 
+
+
+
+There are 3 types of meythods:
+	//createAcc() -> is inherited method
+	//processLoan() -> overridden method
+	//demat()  -> child specific method
+	
+  
+  
+  

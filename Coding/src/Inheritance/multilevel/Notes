@@ -1,0 +1,17 @@
+
+/* 
+Person has id,name, age
+Employee has id,name, age , pan , pf
+Staff has id,name, age , pan , pf , contractId , contractPeriod.
+
+solution:
+Person is the parent class for Employee.
+Employee is the parent class for Staff. 
+
+
+
+Person constructor has 3 args.
+Employee constructor has 5 args ,  from employee constr call the  Person constr ..
+Staff constructor has 7 args , from Staff constr call the employee constr..
+
+*/

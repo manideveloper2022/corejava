@@ -1,0 +1,214 @@
+Inheritance:
+--------------------------------------------
+relationship between two classes.
+-> its a Is-a relation.
+
+
+
+-> there are two types of classes.
+  a)Parent class/Super class/Base class
+  b)sub class/child class/derived class
+    
+    
+    
+     
+Public properties and methods are inherited/available to child class from parent class.
+
+private, static are not eligible for Inheritance.
+
+
+Parent class doesnt know what are the child specific properties/methods.
+
+
+ Ex:
+ 1.Parent class : Loan
+ Child classes: Vehicleloan, marriageLoan, personalLoan
+
+ 2.Parent class : Account
+ Child classes: CurrentAccount , LoanAccount ,CreditCardAccount
+ 
+ 3.Parent class : Card
+ Child classes: CreditCard , DebitCard , VirtalCard
+ 
+ 
+ 
+     
+advantage: 
+re-usability of instance variables and methods in multiple classes
+
+
+
+
+
+Req:
+---------------------------------------------------------------
+Person has id,name, age
+Employee has id, name, age, pan , pf
+create class and create object
+
+
+
+Without Inheritance:
+----------------------------------------------------------------
+public class Person {
+	  String name;
+	  int age;
+	  int id;
+}
+
+
+
+public class Employee {
+	  String name;
+	  int age;
+	  int id;
+  	  String pan;
+      String pf;
+}
+
+
+
+
+With inheritance:
+---------------------------------------------------------
+Person is parent
+Employee is child class
+
+
+
+How to specify  the inheritance between Person and Employee??
+ public class Employee extends Person {
+ }
+ 
+ 
+ 
+public class Person {
+	  String name;
+	  int age;
+	  int id;
+}
+    
+
+
+
+public class Employee extends Person {
+  String pan;
+  String pf;
+}
+
+
+
+
+
+
+Case#1:
+--------------------------------------------------------------------------
+public class Person {
+	  String name;
+	  int age;
+	  int id;
+  
+  
+  pubic void m1(){
+    
+  }
+  
+}
+
+
+public class Employee extends Person{ /// Here Employee is the Child class and Person is parent class
+	String pan;
+	String pfNo;
+
+  public void m2(){
+    
+  }
+}
+
+
+
+How many I.V are in Person : 3  [id,name, age ]
+How many I.V are in Employee : 5 [id,name, age,pan ,pfNo ]
+
+
+How many METHODS are in Person : 1 [m1()]
+How many METHODS are in Employee : 2 [ m1() and m2() ]
+
+
+
+
+
+ Case#2:
+ ---------------------------------------------------------------------------------
+
+public class Person {
+	  String name;
+	  int age;
+	  int id;
+  
+  private int count;
+  
+  public void m1(){
+    
+  }
+  
+  private void m3(){
+    
+  }
+  
+  public static void m4(){
+    
+  }
+}
+
+
+
+
+
+Eligible for inheritence:
+1.id,name, age 
+2. m1() 
+
+
+
+
+
+Types of Inheritance:
+-----------------------
+1.Single
+2.Multi Level
+3.Hierarchial
+4.Multiple Inheritance is not allowed in java
+
+
+
+
+
+
+
+
+
+/*  inheritance using constructor 
+Person has id,name, age
+Employee has id,name, age , pan , pf
+
+create the obj , set data and print.
+
+- Person constructor will have 3 arguments.
+- Employee constructor will have 5 arguments.
+
+  From employee constructor we need to call the person constructor using the super keyword.
+  ex:
+  super(name, age, id);
+  purpose:
+  	- reuse the logic for initialing the inherited instance variables.
+  	- this should be the 1st line of the constr
+  	
+  using super keyword child class can access the parent class properties and methods
+  
+  
+*/
+
+
+
+
