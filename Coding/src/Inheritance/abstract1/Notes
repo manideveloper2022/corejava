@@ -1,0 +1,68 @@
+special classes in inheritance:
+->abstract class
+->interface
+
+
+
+
+Abstract class:
+------------------------------
+-> should be used only in Inheritance.
+-> always a parent class.
+->we cannot create object for abstarct class .
+-> abstarct class has two types of methods:  
+  a) abstract methods
+  b) non abstract methods 
+ -> If a class has one abstract method then class has to be abstract class...
+ 
+ 
+ 
+ 
+->syntax for abstract class:
+--------------------------------
+
+public abstract class RBI{ // class is abstract
+
+
+ public void display(){
+   
+   }
+ 
+public abstract void display1(); // method is abstract
+  
+
+  
+}
+
+
+
+observations:
+------------------
+RBI is a abstract class
+display() is a instance method( non abstract method )
+display1() is a abstarct method 
+
+
+
+ 
+abstract methods:
+------------------
+->has only method declaration ; 
+->abstract method does not have any logic / no body 
+-> abstract method has to be written only in abstract class  
+  public abstract void display1();
+  
+  
+  
+   Impact:
+ --------------
+ Overriding the abstract method is mandatory for child class
+ 
+ 
+ 
+ The only way to use abstract class is by creating child class
+ --> create a class that extends the Abstract class [ only way to use abstract class]  
+-->  For a child class overriding is mandatory for the abstract methods, 
+
+
+
